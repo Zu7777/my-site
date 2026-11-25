@@ -1,7 +1,7 @@
 :root {
   color-scheme: dark;
   font-family: system-ui, sans-serif;
-  background: #101721;
+  background: #14202A;
   color: #f3f5f2;
 }
 
@@ -31,4 +31,24 @@ p {
   color: #b6d6cc;
   font-size: clamp(1rem, 2.5vw, 1.25rem);
   line-height: 1.6;
+}
+
+.contact-button {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.5rem;
+  background: #b6d6cc;
+  color: #14202A;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contact-button:hover {
+  text-decoration: underline;
+}
+
+.contact-button:focus-visible {
+  outline: 2px solid #f3f5f2;
+  outline-offset: 4px;
 }
