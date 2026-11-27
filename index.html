@@ -5,12 +5,78 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Social Media Projects</title>
   <link rel="stylesheet" href="./styles.css">
+  <style>
+    .services {
+      margin-top: clamp(3rem, 8vw, 6rem);
+    }
+
+    .services h2 {
+      margin: 0 0 1.25rem;
+      font-size: clamp(2rem, 5vw, 3rem);
+      letter-spacing: -0.035em;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+      gap: 1rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .service-card {
+      padding: 1.5rem;
+      border: 1px solid #3b5559;
+      border-radius: 1rem;
+      background: linear-gradient(145deg, #253b42, #1a2a34);
+    }
+
+    .service-card h3 {
+      margin: 0;
+      font-size: 1.25rem;
+    }
+
+    .service-card p {
+      margin: 0.65rem 0 0;
+      font-size: 1rem;
+    }
+  </style>
 </head>
 <body>
   <main>
     <h1>Мои новые проекты</h1>
     <p>Проекты по маркетингу и ведению соцсетей.</p>
     <a class="contact-button" href="mailto:zuzu198234@gmail.com">Связаться со мной</a>
+    <section class="services" aria-labelledby="services-title">
+      <h2 id="services-title">Услуги</h2>
+      <ul class="services-grid">
+        <li class="service-card">
+          <h3>Маркетинг</h3>
+          <p>Изучаю аудиторию и конкурентов, помогаю сформулировать предложение и выбрать каналы продвижения.</p>
+        </li>
+        <li class="service-card">
+          <h3>SMM</h3>
+          <p>Составляю контент-план и готовлю публикации для соцсетей в едином стиле.</p>
+        </li>
+        <li class="service-card">
+          <h3>Таргет</h3>
+          <p>Настраиваю рекламу в соцсетях, тестирую аудитории и объявления.</p>
+        </li>
+        <li class="service-card">
+          <h3>Автоворонки</h3>
+          <p>Выстраиваю цепочки сообщений, которые ведут от первого знакомства с продуктом к заявке.</p>
+        </li>
+        <li class="service-card">
+          <h3>Reels</h3>
+          <p>Придумываю идеи и пишу сценарии для коротких роликов о продукте или бренде.</p>
+        </li>
+        <li class="service-card">
+          <h3>Карусели</h3>
+          <p>Превращаю одну тему в серию слайдов с понятной структурой и ясным выводом.</p>
+        </li>
+      </ul>
+    </section>
   </main>
 </body>
 </html>
